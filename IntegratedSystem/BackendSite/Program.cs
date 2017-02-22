@@ -20,9 +20,11 @@ namespace BackendSite
                 // When Service Fabric creates an instance of this service type,
                 // an instance of the class is created in this host process.
 
+                //Registers a reliable stateless service with Service Fabric runtime.
                 ServiceRuntime.RegisterServiceAsync("BackendSiteType",
                     context => new BackendSite(context)).GetAwaiter().GetResult();
 
+                //Logging ETW? 
                 ServiceEventSource.Current.ServiceTypeRegistered(Process.GetCurrentProcess().Id, typeof(BackendSite).Name);
 
                 // Prevents this host process from terminating so services keeps running. 

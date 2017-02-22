@@ -1,0 +1,1 @@
+C:\Users\LUIS\LearningServiceFabric\IntegratedSystem\IntegratedSystem.BackendSite\obj\x64\Debug\IntegratedSystem.BackendSite.sfprojResolveAssemblyReference.cache
